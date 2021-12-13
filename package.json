@@ -24,6 +24,4 @@
   },
   "homepage": "https://github.com/do-community/ejs-demo#readme"
 },
-"scripts": {
-   "start": "node index.js"
-}
+
