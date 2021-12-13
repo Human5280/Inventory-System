@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header><br>
+
+    <main>
+        <form class="inventory_info" action="/successful_page" method="get">
+            <label for ="inventory_ID">Inventory_ID:</label><br>
+            <input type="text" name="inventory_ID"><br>
+            <label for ="name">Name:</label><br>
+            <input type="text" name="name" ><br>
+            <label for ="type">Type:</label><br> 
+            <input type="text" name="type" ><br>
+            <label for ="qty">Quanity:</label><br> 
+            <input type="text" name="qty" ><br>
+            <label for="photo">Photo:</label><br>
+            <input type="file" id="myFile" name="filename"><br>
+            <label for = "inventory_addr">Inventory Address:</label><br>
+            <label for = "street">Street:</label><br>
+            <input for="text" name="street"><br>
+            <label for = "building">Building:</label><br> 
+            <input type="text" name="inventory_addr"><br>
+            <label for="country">Country:</label><br>
+            <input type="text" name="country"><br>
+            <label for="zipcode">Zipcode:</label><br>
+            <input type="text" name="zipcode"><br>
+            <label for="coord">Coordinates:</label><br>
+            <input type="text" name="coord"><br>
+            <label for="manager">Manager Edited: </label><br>
+            <input type="text" name="manager"><br><br>
+            <select>
+                <option value=”update”>Update</option>
+                <option value=”add”>Add</option>
+                <option value=”delete”>Delete</option>
+            </select><br><br>
+            <input type="button" name="submit" value="Submit" ><br>
+        </form>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>
