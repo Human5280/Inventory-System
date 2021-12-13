@@ -26,11 +26,6 @@ app.get('/index', function(req, res) {
     });
 });
 
-// about page
-app.get('/about', function(req, res) {
-    res.render('pages/about');
-});
-
 //login page
 app.get('/',function(req,res){
     res.render('pages/login');
